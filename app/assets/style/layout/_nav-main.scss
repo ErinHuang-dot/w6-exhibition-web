@@ -1,0 +1,22 @@
+.nav-main {
+    max-width: 748px;
+    padding: $spacer * 0.875 0;
+    @include mobile { // pad會掉下來
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    li {
+        width: 65px;
+        margin-right: $spacer * 1.125;
+        .nav-main-link {
+            width: 100%; //hover寬度沒有變化
+            padding: 3px 0;
+            border-bottom: 1px solid $white;
+            &:hover {
+                border-bottom: 1px solid $accent; 
+            }
+        }
+    }
+}

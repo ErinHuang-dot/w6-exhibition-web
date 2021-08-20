@@ -1,0 +1,67 @@
+.subscribe-box {
+    height: 400px;
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.h2 {
+    color: $white;
+    @include mobile {
+        font-size: $h4-font-size;
+        margin-bottom: 22px;
+    }
+}
+.subscribe-info {
+    width: 100%;
+}
+.form-subscribe {//hover效果要再改
+    width: 350px;
+    @include mobile {
+        width: 100%;
+    }
+
+    input[type=email] {
+        width: 61.5%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    input[type=submit] {
+        background-color: $accent;
+        color: $white;
+        width: 38.5%;
+        border: 1px solid $accent;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        &:hover, &:focus {
+            background-color: $accent-dark;
+            border: 1px solid $accent-dark;
+        }
+    }
+}
+
+.copyright {
+    display: flex;
+    @include mobile {
+        display: block;
+    }
+    p {
+        font-size: $h4-font-size;
+        @include mobile {
+            font-size: $font-size-base * 1.375;
+        }
+    }
+}
+
+.nav-footer {
+    @include pad {
+        display: none;
+    }
+    a {
+        padding: 3px 0;
+        border-bottom: 1px solid $white;
+        &:hover {
+            border-bottom: 1px solid $accent;
+        }
+    }
+}

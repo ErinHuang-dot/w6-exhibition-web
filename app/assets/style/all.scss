@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap');
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+@import "./helpers/mixin";
+@import "./helpers/base";
+@import "./helpers/grid";
+@import "./helpers/components";
 
-@import './layout/index.scss'
+@import "./layout/header";
+@import "./layout/nav-main";
+@import "./layout/swiper";
+@import "./layout/footer";
+
+@import "./pages/index";
+@import "./pages/detail";

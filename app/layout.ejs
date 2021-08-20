@@ -7,53 +7,57 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%- title %></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
+    <nav class="nav-home border border-secondary py-7">
+      <div class="container text-center">
+          <a href="#" title="home"><h1 class="h1 text-primary d-inline">EXHIBINECTION</h1></a>
+          <ul class="nav-sub list-unstyled float-end d-flex">
+            <li class="ms-8"><a href="#" title="Sign in">Sign in</a></li>
+            <li class="ms-8"><a href="#" title="Sign up">Sign up</a></li>
+            <li class="ms-8">
+              <a href="#" title="ticket sum up">
+                <span class="material-icons">confirmation_number
+                  <span class="ticket-count">3</span>
+                </span>
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
       </div>
     </nav>
-
     <%- contents %>
 
     <footer class="footer">
-      footer
+      <div class="subscribe-box">
+        <div class="container h-100 d-flex align-items-end">
+          <div class="subscribe-info mb-9">
+            <h2 class="h2 mb-md-3">想收到最新消息嗎？<br> 快訂閱我們！</h2>
+            <form action="post" class="form-subscribe d-flex">
+              <input class="py-3 ps-3 border border-secondary-light rounded-start" type="email" name="email" placeholder="輸入您的電子信箱">
+              <input class="py-3 rounded-end" type="submit" name="submit" value="訂閱">
+            </form>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center py-4 ps-4 py-md-7 ps-md-0">
+          <div class="copyright align-items-center text-black">
+            <p>EXHIBINECTION</p>
+            <span class="ms-md-4">© 2020. All Rights Reserved.</span>    
+          </div>
+          <ul class="nav-footer list-unstyled d-md-flex">
+            <li class="ms-6"><a href="#" title="sign in">Sign in</a></li>
+            <li class="ms-6"><a href="#" title="sign up">Sign up</a></li>
+          </ul>
+        </div>
+      </div>        
     </footer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>

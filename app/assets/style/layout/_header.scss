@@ -1,0 +1,52 @@
+.nav-home {
+    width: 100%;
+    .container {
+        position: relative;
+    }
+}
+
+.h1 {
+    font-size: $h4-font-size;
+    line-height: 1; //無法和nav-sub拆開設定不同對齊
+}
+
+.nav-sub {
+    position: absolute;
+    top: 20%;
+    right: 0;
+}
+.nav-sub li {
+    a {
+        padding: 3px 0;
+        border-bottom: 1px solid $white;    
+    }
+    &:not(:last-child) a:hover {
+        border-bottom: 1px solid $accent;
+    } 
+    .material-icons {
+        color: $secondary-dark;
+        position: relative;
+    }
+    .ticket-count {
+        position: absolute;
+        width: 22px;
+        height: 18px;
+        right: -12px;
+        top: -10px;
+        border-radius: 9px;        
+        color: $white; //字不見了
+        font-size: $font-size-base * 0.75;
+        background-color: $accent;
+    }
+    &:nth-child(1), &:nth-child(2) {
+        @include mobile {
+            display: none;
+        }
+    }
+    &:last-child {
+        margin-right: 26px; // container 的padding沒有效果
+    }
+}
+
+
+

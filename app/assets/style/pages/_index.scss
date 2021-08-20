@@ -1,0 +1,188 @@
+.banner {
+    height: 480px;
+    background-image: url(https://images.unsplash.com/photo-1506846540181-347008948fff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=593&q=80);
+    background-size: cover;
+    background-position: center center;
+    .container {
+        height: 100%;
+        align-items: center;
+        @include mobile {
+            align-items: flex-end;
+            padding-bottom: $spacer * 5;
+        }
+    }
+    &-title {
+        margin-left: 8.6%;
+        @include mobile {
+            width: 100%;
+            margin-left: 0;
+        }
+        p {
+            font-weight: $font-weight-bold;
+            font-size: $h5-font-size;
+        }
+    }
+    &-btn {
+        button {
+            width: 160px;
+            padding: 10px 0;
+            @include mobile {
+                width: 47%;
+            }
+            &:first-child {
+                margin-right: $spacer * 0.5;
+                @include mobile {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+// section-popular
+.popular {
+    &-list {
+        font-size: $h5-font-size;
+        li {
+            width: inherit;
+            height: 350px;
+            @include mobile { //li的寬度在手機無法滿版，因為包在container下面
+                flex-direction: column;
+                height: 633px;
+                padding: $spacer * 1.5 0;
+            }
+        }
+
+    }
+    &-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        @include pad {
+            object-position: -87.5px;
+        }
+        @include mobile {
+            height: 345px;
+            object-position: 0;
+            margin-bottom: $spacer * .5;
+        }
+
+    }
+    &-info {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: $spacer * 2.5 0 $spacer * 2.5 $spacer * 1.25;
+        @include pad {
+            padding: $spacer * 1.5 0 $spacer * 1.5 $spacer * 1.25;
+        }
+        @include mobile {
+            padding: 0;
+            height: 232px;
+        }      
+    }
+    .row {
+        @include mobile {
+            --bs-gutter-x: 0;
+        }
+    }
+    &-info-txt {
+        width: 85%;
+        @include pad {
+            width: 95%;
+        }
+        @include mobile {
+            width: 100%;
+        }
+    }
+    &-title {
+        img {
+            display: none;
+            @include mobile {
+                display: inline-block;
+                vertical-align: initial;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        @include mobile {
+            display: flex;
+            justify-content: space-between;
+        }
+        h4 {
+            font-weight: $font-weight-bold;
+        }
+    }
+    &-mark {
+        display: none;
+        @include mobile {
+            display: inline-block;
+            font-size: $font-size-base;
+        }
+    }
+    &-md-mark {
+        font-weight: $font-weight-bold;
+        img {
+            width: 24px;
+        }
+        @include pad {
+            font-size: $font-size-base;
+        }
+        @include mobile {
+            span, img {
+                display: none;
+            }
+        }
+    }
+    &-detail {
+        @include mobile {
+            font-size: $font-size-base;
+        }
+    }
+}
+
+// section-live
+.live {
+    &-info {
+        height: 482px;
+        background-image: url(https://hexschool.github.io/webLayoutTraining1st/exhibition-week6/people2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .row {
+        height: inherit;
+        margin-left: 0;
+        @include mobile {
+            margin-right: 0;
+        }
+    }
+    &-bg-cover {
+        background-color: $accent-bg;
+        height: 100%;
+        span::after {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 42px;
+            background-color: $white;
+            position: relative;
+            top: 10px;
+            left: 12px;
+        }
+        img {
+            width: 128px;
+            height: 128px;
+        }
+        h4, p {
+            font-size: $h5-font-size;
+        }
+        p {
+            @include pad {
+                font-size: $font-size-base;
+            }
+        }
+        .btn {
+            width: 140px;
+        }
+    }
+}
+

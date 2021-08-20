@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <nav class="nav-home border border-secondary py-7">
+      <div class="container text-center">
+          <a href="#" title="home"><h1 class="h1 text-primary d-inline">EXHIBINECTION</h1></a>
+          <ul class="nav-sub list-unstyled float-end d-flex">
+            <li class="ms-8"><a href="#" title="Sign in">Sign in</a></li>
+            <li class="ms-8"><a href="#" title="Sign up">Sign up</a></li>
+            <li class="ms-8">
+              <a href="#" title="ticket sum up">
+                <span class="material-icons">confirmation_number
+                  <span class="ticket-count">3</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+      </div>
+    </nav>
+    <!-- nav -->
+    <nav class="nav-box border border-secondary">
+      <div class="container">
+        <ul class="nav-main list-unstyled mx-auto text-center d-flex">
+          <li><a class="nav-main-link" href="#">音樂</a></li>
+          <li><a class="nav-main-link" href="#">戲劇</a></li>
+          <li><a class="nav-main-link" href="#">設計</a></li>
+          <li><a class="nav-main-link" href="#">藝術</a></li>
+          <li><a class="nav-main-link" href="#">美食</a></li>
+          <li><a class="nav-main-link" href="#">旅遊</a></li>
+          <li><a class="nav-main-link" href="#">電影</a></li>
+          <li><a class="nav-main-link" href="#">親子</a></li>
+          <li><a class="nav-main-link" href="#">期間限定</a></li>
+        </ul>
+      </div> 
+    </nav>
+    <%- contents %>
+    
+    <!-- swiper -->
+    <section class="swiper mb-5 mb-md-10 mb-lg-15">
+      <div class="container">
+        <h2 class="mb-2 mb-md-6">猜你也喜歡...</h2>
+        <div class="row">
+          <div class="col-12 col-md-11 offset-md-1">
+            <div class="swiper-container mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <div class="card w-100">
+                  <img src="https://images.unsplash.com/photo-1492087368735-957f2d176504?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=960&q=80" class="card-img-top" alt="NO22.線上設計展">
+                  <div class="card-body">
+                    <h5 class="card-title">No.22 線上設計展</h5>
+                    <p class="card-text">$350</p>
+                  </div>
+                </div>  
+                </div>
+                <div class="swiper-slide">
+                <div class="card w-100">
+                  <img src="https://images.unsplash.com/photo-1567722681579-c671cabd2810?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80" class="card-img-top" alt="NO22.線上設計展">
+                  <div class="card-body">
+                    <h5 class="card-title">No.22 線上設計展</h5>
+                    <p class="card-text">$350</p>
+                  </div>
+                </div>  
+                </div>
+                <div class="swiper-slide">
+                <div class="card w-100">
+                  <img src="https://images.unsplash.com/photo-1578402025217-920675beb3c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1065&q=80" class="card-img-top" alt="NO22.線上設計展">
+                  <div class="card-body">
+                    <h5 class="card-title">No.22 線上設計展</h5>
+                    <p class="card-text">$350</p>
+                  </div>
+                </div>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="subscribe-box">
+        <div class="container h-100 d-flex align-items-end">
+          <div class="subscribe-info mb-9">
+            <h2 class="h2 mb-md-3">想收到最新消息嗎？<br> 快訂閱我們！</h2>
+            <form action="post" class="form-subscribe d-flex">
+              <input class="py-3 ps-3 border border-secondary-light rounded-start" type="email" name="email" placeholder="輸入您的電子信箱">
+              <input class="py-3 rounded-end" type="submit" name="submit" value="訂閱">
+            </form>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center py-4 ps-4 py-md-7 ps-md-0">
+          <div class="copyright align-items-center text-black">
+            <p>EXHIBINECTION</p>
+            <span class="ms-md-4">© 2020. All Rights Reserved.</span>    
+          </div>
+          <ul class="nav-footer list-unstyled d-md-flex">
+            <li class="ms-6"><a href="#" title="sign in">Sign in</a></li>
+            <li class="ms-6"><a href="#" title="sign up">Sign up</a></li>
+          </ul>
+        </div>
+      </div>        
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>

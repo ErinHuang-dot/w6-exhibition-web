@@ -1,0 +1,29 @@
+// section-swiper
+.swiper {
+    &-container {
+        width: 100%;
+        height: 100%;
+    }
+    &-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+    }
+}
+
+
+.card {
+    border: 0;
+    &-body h5 {
+        font-weight: $font-weight-bold;    
+        }
+    &-body p {
+        font-size: $h5-font-size;   
+    }
+}
+  
