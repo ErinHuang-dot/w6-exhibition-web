@@ -16037,6 +16037,28 @@ a {
   padding-bottom: 0.625rem;
 }
 
+.card-in-modal {
+  margin-bottom: 0.75rem;
+  padding-top: 1.75rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 576px) {
+  .card-in-modal {
+    margin-bottom: 0.5rem;
+    padding-top: 2.25rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.card-in-modal .card-body {
+  padding-right: 0;
+}
+
 .nav-home {
   width: 100%;
 }
@@ -16061,25 +16083,8 @@ a {
   border-bottom: 1px solid #fff;
 }
 
-.nav-sub li:not(:last-child) a:hover {
+.nav-sub li a:hover {
   border-bottom: 1px solid #E31277;
-}
-
-.nav-sub li .material-icons {
-  color: #373A3C;
-  position: relative;
-}
-
-.nav-sub li .cart-count {
-  position: absolute;
-  width: 22px;
-  height: 18px;
-  right: -12px;
-  top: -10px;
-  border-radius: 9px;
-  color: #fff;
-  font-size: 0.75rem;
-  background-color: #E31277;
 }
 
 @media (max-width: 576px) {
@@ -16090,6 +16095,28 @@ a {
 
 .nav-sub li:last-child {
   margin-right: 26px;
+}
+
+.nav-sub li .cart-btn {
+  background-color: #fff;
+  border: 0;
+  position: relative;
+}
+
+.nav-sub li .cart-count {
+  position: absolute;
+  width: 22px;
+  height: 18px;
+  right: -6px;
+  top: -8px;
+  border-radius: 9px;
+  color: #fff;
+  font-size: 0.75rem;
+  background-color: #E31277;
+}
+
+.nav-sub li .material-icons {
+  color: #373A3C;
 }
 
 .nav-main {
@@ -16512,6 +16539,139 @@ a {
 
 .live-bg-cover .btn {
   width: 140px;
+}
+
+.modal.right .modal-dialog {
+  position: fixed;
+  top: 84px;
+  right: 0;
+  width: 100%;
+  height: 88vh;
+  margin: 0;
+  -webkit-transform: translate3d(0%, 0, 0);
+          transform: translate3d(0%, 0, 0);
+}
+
+.modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto;
+  background: #000;
+}
+
+.modal.right .modal-content ::-webkit-scrollbar {
+  width: 5px;
+  background-color: #fff;
+}
+
+.modal.right .modal-content ::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.modal.right .modal-content ::-webkit-scrollbar-thumb {
+  background-color: #E31277;
+}
+
+.modal-content {
+  border-radius: 0;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-title {
+  font-size: 2rem;
+}
+
+@media (max-width: 576px) {
+  .modal-title {
+    font-size: 1.5rem;
+  }
+}
+
+.modal-body .card {
+  max-width: 476px;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+@media (max-width: 576px) {
+  .modal-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.modal-footer-content {
+  font-size: 1.25rem;
+}
+
+.modal-footer button {
+  width: 118px;
+}
+
+.card {
+  position: relative;
+  height: 172px;
+}
+
+@media (max-width: 576px) {
+  .card {
+    height: auto;
+  }
+}
+
+.card-close {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+
+.card-img {
+  width: 100%;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0;
+}
+
+.card-body-end {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 576px) {
+  .card-body-end {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 8.5%;
+  }
+}
+
+.card-body p {
+  font-size: 1rem;
+}
+
+.card-body p:nth-of-type(2) {
+  margin-bottom: 0.875rem;
+}
+
+.card .card-text-display {
+  font-size: 1.25rem;
 }
 
 .ticket h3, .ticket .h3 {
