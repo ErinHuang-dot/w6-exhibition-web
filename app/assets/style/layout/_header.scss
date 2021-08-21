@@ -18,25 +18,10 @@
 .nav-sub li {
     a {
         padding: 3px 0;
-        border-bottom: 1px solid $white;    
-    }
-    &:not(:last-child) a:hover {
-        border-bottom: 1px solid $accent;
-    } 
-    .material-icons {
-        color: $secondary-dark;
-        position: relative;
-    }
-    .cart-count {
-        position: absolute;
-        width: 22px;
-        height: 18px;
-        right: -12px;
-        top: -10px;
-        border-radius: 9px;        
-        color: $white; //字不見了
-        font-size: $font-size-base * 0.75;
-        background-color: $accent;
+        border-bottom: 1px solid $white; 
+        &:hover {
+            border-bottom: 1px solid $accent;
+        }   
     }
     &:nth-child(1), &:nth-child(2) {
         @include mobile {
@@ -45,6 +30,26 @@
     }
     &:last-child {
         margin-right: 26px; // container 的padding沒有效果
+    }
+
+    .cart-btn {
+        background-color: $white;
+        border: 0;
+        position: relative;
+    }
+    .cart-count {
+        position: absolute;
+        width: 22px;
+        height: 18px;
+        right: -6px;
+        top: -8px;
+        border-radius: 9px;        
+        color: $white; 
+        font-size: $font-size-base * 0.75;
+        background-color: $accent;
+    }
+    .material-icons {
+        color: $secondary-dark;
     }
 }
 

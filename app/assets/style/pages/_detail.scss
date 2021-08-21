@@ -1,3 +1,104 @@
+// cart-list modal
+.modal.right .modal-dialog {  //展開畫面會閃動，是否可以改善？
+    position: fixed;
+    top: 84px;
+    right: 0;
+    width: 100%;
+    height: 88vh;
+    margin: 0;
+    transform: translate3d(0%, 0, 0);
+}
+  
+.modal.right .modal-content {
+    height: 100%;
+    overflow-y: auto;
+    background: $black;
+    ::-webkit-scrollbar {
+        width: 5px;  // 卷軸的位置不知道怎麼更動，只好加粗
+        background-color: $white;
+    }    
+    ::-webkit-scrollbar-track {
+        background-color: $white;
+    }     
+    ::-webkit-scrollbar-thumb {
+        background-color: $accent;
+    }
+}
+
+.modal {
+    &-content {
+        border-radius: 0;
+        border: none;
+    }
+    &-header {
+        border-bottom: none;
+    }
+    &-title {
+        font-size: $h2-font-size;
+        @include mobile {
+            font-size: $h4-font-size;
+        }
+    }
+    &-body{
+        .card{
+            max-width: 476px;
+        }
+    }
+    &-footer {
+        border-top: none;
+        @include mobile {
+            flex-direction: column;
+        }
+        &-content {
+          font-size: $h5-font-size;
+        }
+        &-btn {
+
+        }
+        button {
+            width: 118px;
+        }
+    }
+}
+
+.card {
+    position: relative;
+    height: 172px;
+    @include mobile {
+        height: auto;
+    }
+    &-close {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+    }
+    &-img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 0;
+    } 
+    &-body-end {
+        justify-content: space-between;
+        align-items: center;
+        @include mobile {
+            flex-direction: column-reverse;
+            justify-content: center;
+            width: 8.5%;
+        }
+    }
+    &-body p {
+        font-size: $font-size-base;
+        &:nth-of-type(2) {
+            margin-bottom: $spacer * .875;
+        }
+    }
+    .card-text-display {
+        font-size: $h5-font-size;
+    }
+}
+
+// section.ticket
 .ticket {
     h3 {
         font-size: $h5-font-size;
@@ -49,7 +150,7 @@
             margin-bottom: $spacer * 2.5;
         }
     }
-    &-count {
+    &-count { //改成button
         width: 50%;
         padding-top: $spacer * 5.5;
         border-right: 1px solid $secondary;
@@ -70,7 +171,7 @@
     .count-display {
         font-size: $h1-font-size;
     }
-    &-class {
+    &-class { //改成button
         li {
             width: 65px;
             padding-bottom: 3px;
@@ -87,6 +188,7 @@
     }
 }
 
+// section.event
 .event {
     &-info {
         display: flex;
