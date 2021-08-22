@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <nav class="nav-home border border-secondary py-7">
+      <div class="container text-center">
+          <a href="#" title="home"><h1 class="h1 text-primary d-inline">EXHIBINECTION</h1></a>
+          <ul class="nav-sub list-unstyled float-end d-flex">
+            <li class="ms-8"><a href="#" title="Sign in">Sign in</a></li>
+            <li class="ms-8"><a href="#" title="Sign up">Sign up</a></li>
+            <li class="ms-8">
+              <button type="button" class="cart-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <span class="material-icons">confirmation_number</span>
+                <span class="cart-count">3</span>
+              </button>
+            </li>
+          </ul>
+      </div>
+    </nav>
+  
+    <%- contents %>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>

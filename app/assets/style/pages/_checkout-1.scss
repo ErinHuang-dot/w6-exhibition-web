@@ -1,0 +1,60 @@
+.checkout {
+    &-progress {
+        height: 85vh;
+        @include mobile {
+            margin-bottom: $spacer * 5.625;
+        }
+    }
+    .row {
+        --bs-gutter-x: 0;
+    }
+    &-img {
+        width: 160px;
+        height: 85px;
+        object-fit: cover;
+        @include mobile {
+            width: 47.8%;
+        }
+    }
+    &-detail1 {
+        width: 22%;
+        @include mobile {
+            width: 47.8%;
+        }
+    }
+    &-detail2 {
+        width: 13.5%;
+    }
+    &-detail3 {
+        width: 23%;
+    }
+    &-item {
+        position: relative;        
+    }
+    &-detail4 {
+        @include mobile {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    &-aside {
+        @include mobile {
+            height: auto;
+            justify-content: flex-end;
+        }
+    }
+    &-aside-end {
+        width: 100%;
+        @include mobile {
+            width: 50%;
+        }
+        .btn {
+            width: 100%;
+        }
+    }
+    &-sum {
+        font-size: $h5-font-size;
+    }
+    
+}

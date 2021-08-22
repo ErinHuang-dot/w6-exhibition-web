@@ -1,0 +1,27 @@
+
+.checkout-aside-end {
+    width: 100%;
+}
+
+.checkout2-progress {
+    @include mobile {
+        flex-direction: column;
+    }
+    .checkout2-content {
+        width: 65.5%;
+        @include mobile {
+            width: 100%;
+            order: 2;
+        }
+    }
+
+    .checkout2-aside {
+        width: 31.5%;
+        @include mobile {
+            width: 100%;
+            order: 1;
+        }
+    }
+
+}
+

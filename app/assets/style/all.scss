@@ -3,15 +3,22 @@
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+// helpers
 @import "./helpers/mixin";
 @import "./helpers/base";
 @import "./helpers/grid";
 @import "./helpers/components";
+@import "./helpers/util";
 
+// layout
 @import "./layout/header";
 @import "./layout/nav-main";
 @import "./layout/swiper";
 @import "./layout/footer";
 
+// pages
 @import "./pages/index";
 @import "./pages/detail";
+@import "./pages/checkout-1";
+@import "./pages/checkout-2";
+@import "./pages/checkout-4";

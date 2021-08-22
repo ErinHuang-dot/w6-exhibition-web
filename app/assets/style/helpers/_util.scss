@@ -1,0 +1,37 @@
+.card-text-display {
+    font-size: $h5-font-size;
+}
+
+.btn-close {
+    opacity: 1;
+}
+
+// margin
+.mb-1-1 {
+    margin-bottom: $spacer * .375;
+}
+.mb-3-1 {
+    margin-bottom: $spacer * .875;
+}
+
+.mb-10-1 {
+    margin-bottom: $spacer * 2.625;
+}
+
+.mb-13-1 {
+    margin-bottom: $spacer * 3.375;
+}
+
+.me-7-1 {
+    margin-right: $spacer * 1.875;
+    @include mobile {
+        margin-right: $spacer;
+    }
+}
+
+.me-7-2 {
+    margin-right: $spacer * 1.875;
+    @include mobile {
+        margin-right: 0;
+    }
+}

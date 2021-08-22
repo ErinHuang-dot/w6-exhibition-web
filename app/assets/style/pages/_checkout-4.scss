@@ -1,0 +1,21 @@
+.complete {
+    max-width: 540px;
+    margin-top: $spacer * 6.375;
+    @include mobile {
+        margin-top: $spacer * 2.625;
+    }
+    .material-icons {
+        font-size: $font-size-base * 2.75;
+        margin-bottom: $spacer * .625;
+    }
+}
+
+.btn-complete {
+    margin-top: $spacer * 6;
+    @include mobile {
+        margin-top: $spacer * 5;
+    }
+    button {
+        width: 47%;
+    }
+}
