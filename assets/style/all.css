@@ -16032,9 +16032,53 @@ a {
   }
 }
 
+.card-text-display {
+  font-size: 1.25rem;
+}
+
+.mb-1-1 {
+  margin-bottom: 0.375rem;
+}
+
+.mb-3-1 {
+  margin-bottom: 0.875rem;
+}
+
+.mb-10-1 {
+  margin-bottom: 2.625rem;
+}
+
+.mb-13-1 {
+  margin-bottom: 3.375rem;
+}
+
+.me-7-1 {
+  margin-right: 1.875rem;
+}
+
+@media (max-width: 576px) {
+  .me-7-1 {
+    margin-right: 1rem;
+  }
+}
+
+.me-7-2 {
+  margin-right: 1.875rem;
+}
+
+@media (max-width: 576px) {
+  .me-7-2 {
+    margin-right: 0;
+  }
+}
+
 .btn {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+}
+
+.btn-close {
+  opacity: 1;
 }
 
 .btn-checkout {
@@ -16067,6 +16111,24 @@ a {
   }
 }
 
+.btn-complete {
+  margin-top: 6rem;
+}
+
+@media (max-width: 576px) {
+  .btn-complete {
+    margin-top: 5rem;
+  }
+}
+
+.btn-complete button {
+  width: 47%;
+}
+
+.card-body p {
+  font-size: 1.25rem;
+}
+
 .card-in-modal {
   margin-bottom: 0.75rem;
   padding-top: 1.75rem;
@@ -16087,6 +16149,98 @@ a {
 
 .card-in-modal .card-body {
   padding-right: 0;
+}
+
+.form-subscribe {
+  width: 350px;
+}
+
+@media (max-width: 576px) {
+  .form-subscribe {
+    width: 100%;
+  }
+}
+
+.form-subscribe input[type=email] {
+  width: 61.5%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.form-subscribe input[type=submit] {
+  background-color: #E31277;
+  color: #fff;
+  width: 38.5%;
+  border: 1px solid #E31277;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-subscribe input[type=submit]:hover, .form-subscribe input[type=submit]:focus {
+  background-color: #b60e5f;
+  border: 1px solid #b60e5f;
+}
+
+.form-order input {
+  width: 100%;
+  padding: 0.5rem 0 0.5rem 0.75rem;
+  border-color: #ced4da;
+  border-style: solid;
+  border-radius: 0.25rem;
+}
+
+.nav-main {
+  max-width: 748px;
+  padding: 0.875rem 0;
+}
+
+@media (max-width: 576px) {
+  .nav-main {
+    width: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+.nav-main li {
+  width: 65px;
+  margin-right: 1.125rem;
+}
+
+.nav-main li .nav-main-link {
+  width: 100%;
+  padding: 3px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.nav-main li .nav-main-link:hover {
+  border-bottom: 1px solid #E31277;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .timeline {
@@ -16136,58 +16290,6 @@ a {
 @media (max-width: 576px) {
   .timeline {
     font-size: 0.875rem;
-  }
-}
-
-.form-order input {
-  width: 100%;
-  padding: 0.5rem 0 0.5rem 0.75rem;
-  border-color: #ced4da;
-  border-style: solid;
-  border-radius: 0.25rem;
-}
-
-.card-text-display {
-  font-size: 1.25rem;
-}
-
-.btn-close {
-  opacity: 1;
-}
-
-.mb-1-1 {
-  margin-bottom: 0.375rem;
-}
-
-.mb-3-1 {
-  margin-bottom: 0.875rem;
-}
-
-.mb-10-1 {
-  margin-bottom: 2.625rem;
-}
-
-.mb-13-1 {
-  margin-bottom: 3.375rem;
-}
-
-.me-7-1 {
-  margin-right: 1.875rem;
-}
-
-@media (max-width: 576px) {
-  .me-7-1 {
-    margin-right: 1rem;
-  }
-}
-
-.me-7-2 {
-  margin-right: 1.875rem;
-}
-
-@media (max-width: 576px) {
-  .me-7-2 {
-    margin-right: 0;
   }
 }
 
@@ -16251,72 +16353,6 @@ a {
   color: #373A3C;
 }
 
-.nav-main {
-  max-width: 748px;
-  padding: 0.875rem 0;
-}
-
-@media (max-width: 576px) {
-  .nav-main {
-    width: 100%;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-}
-
-.nav-main li {
-  width: 65px;
-  margin-right: 1.125rem;
-}
-
-.nav-main li .nav-main-link {
-  width: 100%;
-  padding: 3px 0;
-  border-bottom: 1px solid #fff;
-}
-
-.nav-main li .nav-main-link:hover {
-  border-bottom: 1px solid #E31277;
-}
-
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: 350px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.card {
-  border: 0;
-}
-
-.card-body h5, .card-body .h5 {
-  font-weight: 700;
-}
-
-.card-body p {
-  font-size: 1.25rem;
-}
-
 .subscribe-box {
   height: 400px;
   background-image: url(https://hexschool.github.io/webLayoutTraining1st/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg);
@@ -16337,36 +16373,6 @@ a {
 
 .subscribe-info {
   width: 100%;
-}
-
-.form-subscribe {
-  width: 350px;
-}
-
-@media (max-width: 576px) {
-  .form-subscribe {
-    width: 100%;
-  }
-}
-
-.form-subscribe input[type=email] {
-  width: 61.5%;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.form-subscribe input[type=submit] {
-  background-color: #E31277;
-  color: #fff;
-  width: 38.5%;
-  border: 1px solid #E31277;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.form-subscribe input[type=submit]:hover, .form-subscribe input[type=submit]:focus {
-  background-color: #b60e5f;
-  border: 1px solid #b60e5f;
 }
 
 .copyright {
@@ -17132,20 +17138,6 @@ a {
 .complete .material-icons {
   font-size: 2.75rem;
   margin-bottom: 0.625rem;
-}
-
-.btn-complete {
-  margin-top: 6rem;
-}
-
-@media (max-width: 576px) {
-  .btn-complete {
-    margin-top: 5rem;
-  }
-}
-
-.btn-complete button {
-  width: 47%;
 }
 
 /*# sourceMappingURL=all.css.map */
