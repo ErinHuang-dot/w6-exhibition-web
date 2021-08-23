@@ -1,0 +1,37 @@
+// btn
+.btn {
+    padding-top: $spacer * 0.625;
+    padding-bottom: $spacer * 0.625;
+}
+
+.btn-close {
+    opacity: 1;
+}
+
+.btn-checkout {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $spacer * 2.5;
+    .btn-pre {
+        width: 14.5%;
+        @include mobile {
+            width: 47.8%;
+        }
+    }
+    .btn-next {
+        width: 31.5%;
+        @include mobile {
+            width: 47.8%;
+        }
+    }
+}
+
+.btn-complete {
+    margin-top: $spacer * 6;
+    @include mobile {
+        margin-top: $spacer * 5;
+    }
+    button {
+        width: 47%;
+    }
+}

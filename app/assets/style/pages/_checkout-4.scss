@@ -10,12 +10,3 @@
     }
 }
 
-.btn-complete {
-    margin-top: $spacer * 6;
-    @include mobile {
-        margin-top: $spacer * 5;
-    }
-    button {
-        width: 47%;
-    }
-}

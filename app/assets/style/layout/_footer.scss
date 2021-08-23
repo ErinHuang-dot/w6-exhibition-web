@@ -15,30 +15,6 @@
 .subscribe-info {
     width: 100%;
 }
-.form-subscribe {//hover效果要再改
-    width: 350px;
-    @include mobile {
-        width: 100%;
-    }
-
-    input[type=email] {
-        width: 61.5%;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-    input[type=submit] {
-        background-color: $accent;
-        color: $white;
-        width: 38.5%;
-        border: 1px solid $accent;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        &:hover, &:focus {
-            background-color: $accent-dark;
-            border: 1px solid $accent-dark;
-        }
-    }
-}
 
 .copyright {
     display: flex;
